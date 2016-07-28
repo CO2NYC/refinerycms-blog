@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 
-gem "refinerycms-authentication-devise", '~> 1.0.4'
+gem "refinerycms-authentication-devise"
 
 gemspec
 
-git "https://github.com/refinery/refinerycms", branch: "master" do
-  gem 'refinerycms'
+git "https://github.com/refinery/refinerycms" do
+  gem 'refinerycms', '>= 4.0.0.dev'
 
   group :development, :test do
     gem 'refinerycms-testing'
